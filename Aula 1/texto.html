@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com textos</title>
+
+    <style>
+    
+        body{
+
+            background-color: rgb(0, 255, 42);
+            color: white;
+            text-align: center;
+
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Aperte F5 para refazer</h1>
+
+    <script>
+
+        var nome = prompt('Digite seu nome:')
+        console.log('A variável nome é: ' , nome)
+        console.log(typeof(nome))
+
+        console.log( nome.length)
+
+        console.log(nome.toUpperCase())
+
+        console.log(nome.toLowerCase())
+
+        console.log(nome)
+
+        alert(`Seu nome tem ${nome.length} caracteres`)
+        alert(`Seu nome em maiúsculo é ${nome.toUpperCase()}`)
+        alert(`Seu nome em minúsculo é ${nome.toLowerCase()}`)
+
+        document.writeln(`Seu nome tem ${nome.length} caracteres <br>`)
+        document.writeln(`Seu nome em maiúsculo é ${nome.toUpperCase()} <br>`)
+        document.writeln(`Seu nome em minúsculo é ${nome.toLowerCase()} <br>`)
+
+    </script>
+    
+</body>
+
+</html>
