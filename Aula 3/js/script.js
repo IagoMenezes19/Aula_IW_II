@@ -6,14 +6,14 @@ function peganumero1(){
 }
 
 function peganumero2(){
-    var segunumber = document.getElementById ('prinumber').value
-    console.log('Primeiro numero: ', segunumber)
+    var segnumber = document.getElementById ('prinumber').value
+    console.log('Primeiro numero: ', segnumber)
 }
 
 function soma(){
     var prinumber = parseInt(document.getElementById('prinumber').value)
-    var segunumber = parseInt(document.getElementById('segnumber').value)
-    var soma = prinumber + segunumber
+    var segnumber = parseInt(document.getElementById('segnumber').value)
+    var soma = prinumber + segnumber
     console.log('soma: ', soma)
     resultado.innerHTML = soma
 }
