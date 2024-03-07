@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo valor do Input</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Calculaodra</title>
+    <link rel="alternate" href="css/style.css" type="application/atom+xml" title="Atom">
 </head>
 <body>
+        <h1>Calculadora</h1>
+        Digite um numero
+        <input id="n1" name="n1" value="" type="number">
+        <button id="botão" onclick="peganumero1()"> Confirm </button>
 
-    <h1>Calculadora em Java</h1>
-
-    Digite o primeiro numero: 
-    <input id="prinumber" value="" type="number">
-    <button id="botao" onclick="peganumero1()">Confirme</button>
-    
-    <p>Digite o segundo numero: 
-    <input id="segnumber" value="" type="number">
-    <button id="botao" onclick="peganumero2()">Confirme</button></p> 
-
-    <h1>Escolha o que fazer a seguir</h1>
-    <p><button id="soma" onclick="soma">Somar</button>
-    <button id="subtrair" onclick="sub">Subtrair</button>
-    <button id="multi" onclick="mult">Multiplicar</button>
-    <button id="divisao" onclick="divi">Dividir</button>
-    <button id="limpar" onclick="limpar">Limpar</button></p> 
+        
+        <p> Digite um numero; <input id="n2" name="n2" value="" type="number">
+        <button id="botão" onclick="peganumero2()"> Confirm </button></p>
 
 
-    <p id="resultado">Aqui vai aparecer o seu resultado</p>
+        <h1>Escolha a operação</h1>
+        <button id="adição" onclick="soma()">soma</button>
+        <button id="subtração " onclick="sub()" >subtração</button>
+        <button id="mult" onclick="mult()">multiplicação</button>
+        <button id="divi" onclick="divi()">divisão</button>
+        <button id="limpar" onclick="limp()"> limpar</button>
 
-    <script src="js/script.js"></script>
-    
+        <h1 id="resultado"> Resultado</h1>
+
+
+        <script src="js/script.js"></script>
+
 </body>
 </html>
