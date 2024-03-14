@@ -1,56 +1,52 @@
-const ligar = document.getElementById('ligar')
-const desligar = document.getElementById('desligar')
-const lampada = document.getElementById('lampada')
-const bduplo = document.getElementById('bduplo')
-const texto = document.getElementById('texto')
+const lamp = document.getElementById('lamp')
+const restaurar = document.getElementById('restaurar')
+const botao = document.getElementById('botao')
 
-
-function estaQuebrada(){
-    return lampada.src.indexOf('quebrada') > -1
-    texto.innerHTML ="LIGADA"
+function verbrk()
+{
+    return lamp.src.indexOf('quebrada') > -1
 }
 
-function lampadaligar(){
-    if(!estaQuebrada()){
-    lampada.src = "img/ligada.jpg"
+function verlgd(){
+    return lamp.src.indexOf('desligada') > -1
+}
+
+function rst(){
+    if (verbrk()){
+        lamp.src = "img/desligada.jpg"
     }
-    texto.innerHTML ="LIGADA"
 }
 
-function lampadadesligada(){
-    if(!estaQuebrada()){
-    lampada.src = "img/desligada.jpg"
+restaurar.addEventListener('click', rst)
+
+function on(){
+    if (!verbrk()){
+        lamp.src = "img/ligada.jpg"
     }
-    texto.innerHTML ="DESLIGADA"
 }
+lamp.addEventListener('mouseover', on)
 
-function lampadaquebrada(){
-    lampada.src= "img/quebrada.jpg"
-    texto.innerHTML ="QUEBRADA"
-}
-
-function ligadesliga() {
-    if (bduplo.textContent=='LIGAR'){
-        lampadaligar();
-        bduplo.textContent='DESLIGAR';
-    } 
-    
-    else{
-        lampadadesligada();
-        bduplo.textContent='LIGAR';
+function off(){
+    if (!verbrk()){
+        lamp.src = "img/desligada.jpg"
     }
-    texto.innerHTML ="LIGA/DESLIGA"
- 
+}
+lamp.addEventListener('mouseleave', off)
+
+function onoff(){
+    if (!verbrk()){
+        if(verlgd()){
+            lamp.src = "img/ligada.jpg"
+        }
+        else{
+            lamp.src = "img/desligada.jpg"
+        }
+    }
 }
 
+function brk(){
+    lamp.src = "img/quebrada.jpg"
+}
 
-
-ligar.addEventListener('click',lampadaligar)
-desligar.addEventListener('click',lampadadesligada)
-
-lampada.addEventListener('mouseover',lampadaligar)
-lampada.addEventListener('mouseleave',lampadadesligada)
-
-lampada.addEventListener('dblclick',lampadaquebrada)
-
-bduplo.addEventListener('click',ligadesliga)
+lamp.addEventListener('dblclick', brk)
+botao.addEventListener('click', onoff)
