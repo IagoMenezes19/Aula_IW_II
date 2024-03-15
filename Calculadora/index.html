@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="calculadoradentro">
+            <h1>Calculadora JS</h1>
+
+            <p>Digite o primeiro número: 
+            <input id="n1" name="n1" value="" type="number"></p>
+
+            <p>Digite o segundo número: 
+            <input id="n2" name="n2" value="" type="number"></p>
+
+            <button onclick="ad()">Adição</button>
+            <button onclick="sb()">Subtrair</button>
+            <button onclick="mt()">Multiplicar</button>
+            <button onclick="dv()">Dividir</button>
+            <button onclick="lp()">Limpar</button>
+
+            <p class="result">Resultado: <span id="resul"></span></p>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

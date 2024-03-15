@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+    
+        body{
+
+            background-color: red;
+            color: white;
+            text-align: center;
+
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Aperte F5 para refazer</h1>
+
+</body>
+
+<script>
+
+    var nm1 = parseFloat(prompt('Olá digite o primeiro numero:'))
+    console.log('O numero 1 é: ' , nm1)
+    console.log(typeof(nm1))
+
+    var nm2 = parseFloat(prompt('Olá digite o segundo numero:'))
+    console.log('O numero 2 é: ' , nm2)
+    console.log(typeof(nm2))
+
+    var sm = nm1 + nm2
+    console.log('A soma de é: ' , sm)
+    var sb = nm1 - nm2
+    console.log('A subtração é: ' , sb)
+    var dv = nm1 / nm2
+    console.log('A divisão é: ' , dv)
+    var mt = nm1 * nm2
+    console.log('A multiplicação é: ' , mt)
+
+    alert('A soma é: ' + sm)
+    alert('A subtração é: ' + sb)
+    alert('A divisão é: ' + dv)
+    alert('A multiplicação é: ' + mt)
+
+    document.writeln('O primeiro numero é: ' + nm1)
+    document.writeln('O segundo numero é: ' + nm2)
+    document.write(`<br>`)
+    document.write(`<br>`)
+    document.write(`A soma de ${nm1} com ${nm2} é ${sm} <br>`)
+    document.write(`A subtração de ${nm1} com ${nm2} é ${sb} <br>`)
+    document.write(`A divisão de ${nm1} com ${nm2} é ${dv} <br>`)
+    document.write(`A multiplicação de ${nm1} com ${nm2} é ${mt} <br>`)
+
+
+</script>
+
+</html>

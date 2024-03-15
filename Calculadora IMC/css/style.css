@@ -1,0 +1,30 @@
+.imc{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imcdentro{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 2px;
+    border-color: #ff8b43;
+    padding: 20px;
+    background-color: gray;
+}
+
+button{
+    background-color: #ff8b43;
+}
+
+input{
+    width: 140px;
+}
+
+.resul{
+    border: solid;
+    border-radius: 2px;
+    padding: 10px;
+}

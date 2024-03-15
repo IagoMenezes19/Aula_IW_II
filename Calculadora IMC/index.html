@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="imc">
+        <div class="imcdentro">
+            <h1>Calculadora IMC</h1>
+
+            Peso:
+            <input id="peso" value="0" type="range" min="1" max="300" step="1" oninput="peso(this.value)">
+            <span id="valorpeso">0</span>
+
+            Altura:
+            <input id="altura" value="0" type="range" min="0" max="3" step="0.01" oninput="altura(this.value)">
+            <span id="valoralt">0</span>
+
+            Sexo:
+            <select id="sexo">
+                <option id="masculino" value="masculino">Masculino</option>
+                <option id="feminino" value="feminino">Feminino</option>
+            </select>
+
+            <button onclick="Calc()">Calcular</button>
+
+            <p id="resul"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

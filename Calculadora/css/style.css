@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+}
+
+.calculadora{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculadoradentro{
+    border: solid;
+    border-radius: 2px;
+    border-color: #ff8b43;
+    padding: 20px;
+    background-color: gray;
+}
+
+button{
+    background-color: #ff8b43;
+}
+
+input{
+    width: 140px;
+    background-color: rgb(13, 190, 87);
+}
+
+.result{
+    border: solid;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgb(13, 190, 87);
+}
